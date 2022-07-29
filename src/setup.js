@@ -23,6 +23,7 @@ import { getReverseRecord } from './apollo/sideEffects'
 import { rpcUrl } from './rpcUrl'
 import { setupAnalytics } from './utils/analytics'
 import { safeInfo, setupSafeApp } from './utils/safeApps'
+import { customNetwork, ensAddress } from './customNetwork'
 
 export const setFavourites = () => {
   favouritesReactive(
@@ -37,6 +38,7 @@ export const setSubDomainFavourites = () => {
 }
 
 export const isSupportedNetwork = networkId => {
+  const customNetworkId = customNetwork === 'any' ? 1 : customNetwork.chainId
   switch (networkId) {
     case 1:
     case 3:
@@ -44,6 +46,7 @@ export const isSupportedNetwork = networkId => {
     case 5:
     case 1337:
     case 31337:
+    case customNetworkId:
       return true
     default:
       return false
@@ -143,7 +146,7 @@ export const setWeb3Provider = async provider => {
       })
       return
     }
-
+    // TODO pass wrapped customProvider with customNetwork if the chain matches
     await setup({
       customProvider: provider,
       reloadOnAccountsChange: false,

@@ -10,6 +10,7 @@ export async function setup({
   enforceReadOnly,
   enforceReload,
   customProvider,
+  customNetwork = 'any',
   ensAddress
 }) {
   let option = {
@@ -17,6 +18,7 @@ export async function setup({
     enforceReadOnly,
     enforceReload,
     customProvider,
+    customNetwork,
     ensAddress
   }
   const {

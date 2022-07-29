@@ -1,4 +1,4 @@
-import { getNetwork, getNetworkId, isReadOnly } from '@ensdomains/ui'
+import { ethers, getNetwork, getNetworkId, isReadOnly } from '@ensdomains/ui'
 import { setup as setupENS } from '../apollo/mutations/ens'
 import {
   isReadOnlyReactive,
@@ -7,6 +7,7 @@ import {
   web3ProviderReactive
 } from '../apollo/reactiveVars'
 import { rpcUrl } from '../rpcUrl'
+import { customNetwork, ensAddress } from '../customNetwork'
 
 const PORTIS_ID = '57e5d6ca-e408-4925-99c4-e7da3bdb8bf5'
 
@@ -61,11 +62,16 @@ export const connect = async () => {
 
     web3Modal = new Web3Modal(option)
     provider = await web3Modal.connect()
+    const customProvider = new ethers.providers.Web3Provider(
+      provider,
+      customNetwork
+    )
 
     await setupENS({
-      customProvider: provider,
+      customProvider,
       reloadOnAccountsChange: false,
-      enforceReload: true
+      enforceReload: true,
+      ensAddress
     })
     return provider
   } catch (e) {
