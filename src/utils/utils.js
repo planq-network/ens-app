@@ -131,6 +131,7 @@ export const parseSearchTerm = async term => {
   const ens = getENS()
   const domains = term.split('.')
   const tld = domains[domains.length - 1]
+
   try {
     _validateName(tld)
   } catch (e) {
