@@ -103,6 +103,7 @@ export const updateResponse = response => {
       } catch (e) {
         return
       }
+
       if (responseItem.id !== hashedName) {
         this.update({ ...responseItem, name: hashedName, invalidName: true })
       }
