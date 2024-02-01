@@ -54,8 +54,8 @@ export const isSupportedNetwork = networkId => {
 }
 
 export const getProvider = async reconnect => {
+  let provider
   try {
-    let provider
     if (
       process.env.REACT_APP_STAGE === 'local' &&
       process.env.REACT_APP_ENS_ADDRESS

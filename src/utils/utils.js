@@ -34,6 +34,7 @@ export const networkName = {
   goerli: 'goerli',
   rinkeby: 'rinkeby',
   ropsten: 'ropsten',
+  planq: 'planq',
   local: 'local'
 }
 
@@ -97,6 +98,8 @@ export async function getEtherScanAddr() {
     case 4:
     case '4':
       return 'https://rinkeby.etherscan.io/'
+    case '7070':
+      return 'https://evm.planq.network/'
     default:
       return 'https://etherscan.io/'
   }

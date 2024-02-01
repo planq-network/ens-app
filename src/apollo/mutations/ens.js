@@ -10,7 +10,7 @@ export async function setup({
   enforceReadOnly,
   enforceReload,
   customProvider,
-  customNetwork = 'any',
+  customNetwork = 'planq',
   ensAddress
 }) {
   let option = {
