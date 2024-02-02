@@ -40,7 +40,7 @@ function getGraphQLAPI() {
     return endpoints[network]
   }
 
-  return endpoints['1']
+  return endpoints['7070']
 }
 
 function fromPromise(promise, operation) {
