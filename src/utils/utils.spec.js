@@ -14,8 +14,8 @@ describe('isOwnerOfParentDomain', () => {
 })
 
 describe('normaliseOrMark', () => {
-  const invalidName = '🏳%EF%B8%8F%E2%80%8D🌈.eth'
-  let mockData = [{ name: 'ensfairy.eth' }, { name: invalidName }]
+  const invalidName = '🏳%EF%B8%8F%E2%80%8D🌈.plq'
+  let mockData = [{ name: 'ensfairy.plq' }, { name: invalidName }]
 
   it('should return all names', () => {
     const result = normaliseOrMark(mockData, 'name')
@@ -32,12 +32,12 @@ describe('normaliseOrMark', () => {
     mockData = [
       // correct
       {
-        name: 'sload.eth',
+        name: 'sload.plq',
         id: '0xffbc90bb419dda442595117ac481f8b15cfdbf1884d15cf2290c4cea5349c27d'
       },
       // invalid (a name with a null byte suffix,)
       {
-        name: 'sload.eth',
+        name: 'sload.plq',
         id: '0xf1cc8e202048c1fdfb2154fe7e19b095c51effc73ee4e6cd50f006ce6242e1d9'
       }
     ]

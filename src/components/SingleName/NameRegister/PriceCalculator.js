@@ -1,7 +1,7 @@
 import EthVal from 'ethval'
 function priceCalculator({
-  price, // in ETH, BN
-  premium = 0, // in ETH
+  price, // in PLQ, BN
+  premium = 0, // in PLQ
   ethUsdPrice
 }) {
   if (!price) return {}

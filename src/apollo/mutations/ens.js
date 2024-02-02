@@ -10,7 +10,11 @@ export async function setup({
   enforceReadOnly,
   enforceReload,
   customProvider,
-  customNetwork = 'planq',
+  customNetwork =  {
+    chainId: 7070,
+    name: 'Planq',
+    ensAddress: '0xF02135bdE2C85F6F0909438ed631f3eb36203e72',
+  },
   ensAddress
 }) {
   let option = {

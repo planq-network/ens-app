@@ -5,7 +5,7 @@ const exec = util.promisify(require('child_process').exec)
 
 const whitelist = [
   'apollo-upgrade-ensdev.surge.sh',
-  'app.ens.domains',
+  'names.planq.network',
   'ensdomains.surge.sh',
   'ensdomains-v2.surge.sh',
   'jefflau.dev',

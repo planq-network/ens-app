@@ -52,7 +52,7 @@ describe('namehashCheckLink', () => {
                 labelName: 'sload',
                 labelhash:
                   '0x3ce5104b7e095f1da4813bc8cfb34e760b7baa688e47e078597322372a6af0b4',
-                name: 'sload.eth',
+                name: 'sload.plq',
                 isMigrated: true,
                 __typename: 'Domain',
                 invalidName: true

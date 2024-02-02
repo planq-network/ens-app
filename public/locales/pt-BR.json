@@ -146,7 +146,7 @@
       "title": "Gerencie nomes"
     },
     "register": {
-      "text": "Registre .eth nomes por $5 (Dolares)/ano. Estenda seus nomes registrados a qualquer momento.",
+      "text": "Registre .plq nomes por $5 (Dolares)/ano. Estenda seus nomes registrados a qualquer momento.",
       "title": "Nomes de Registro"
     },
     "search": {
@@ -231,7 +231,7 @@
   "reminder": {
     "everywhere": "em todos os lugares",
     "release": {
-      "description": "Registro {{name}} em https://app.ens.domains/name/{{name}}/register",
+      "description": "Registro {{name}} em https://names.planq.network/name/{{name}}/register",
       "title": "Registro {{name}}"
     },
     "renewal": {
@@ -245,7 +245,7 @@
   },
   "searchErrors": {
     "domainMalformed": {
-      "long": "Você adicionou um domínio sem TLD, como o .eth, ou adicionou caracteres não suportados.",
+      "long": "Você adicionou um domínio sem TLD, como o .plq, ou adicionou caracteres não suportados.",
       "short": "Domínio mal formatado. {{searchTerm}} não é um domínio válido."
     },
     "tooShort": {
@@ -304,7 +304,7 @@
         "title": "2. Defina outros registros"
       },
       "step3": {
-        "text": "Você pode hospedar seu html/css/images estáticos no IPFS e colocar o hash no registro de conteúdo do seu nome ENS. Em seguida, ele pode ser resolvido por navegadores compatíveis com ENS (por exemplo, Opera), extensões de navegador (Metamask) ou qualquer navegador com '.link' anexado ao final (por exemplo, ens.eth.link)",
+        "text": "Você pode hospedar seu html/css/images estáticos no IPFS e colocar o hash no registro de conteúdo do seu nome ENS. Em seguida, ele pode ser resolvido por navegadores compatíveis com ENS (por exemplo, Opera), extensões de navegador (Metamask) ou qualquer navegador com '.link' anexado ao final (por exemplo, ens.plq.link)",
         "title": "3. Definir um hash de conteúdo de um site descentralizado."
       },
       "title": "Aprenda como administrar seu nome."

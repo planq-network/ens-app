@@ -146,7 +146,7 @@
       "title": "Gestisci domini"
     },
     "register": {
-      "text": "Registra domini .eth per $5/anno. Rinnova o annulla una registrazione di dominio in qualsiasi momento.",
+      "text": "Registra domini .plq per $5/anno. Rinnova o annulla una registrazione di dominio in qualsiasi momento.",
       "title": "Registra nomi di dominio"
     },
     "search": {
@@ -231,7 +231,7 @@
   "reminder": {
     "everywhere": "ovunque",
     "release": {
-      "description": "Registra {{name}} su https://app.ens.domains/name/{{name}}/register",
+      "description": "Registra {{name}} su https://names.planq.network/name/{{name}}/register",
       "title": "Registra {{name}}"
     },
     "renewal": {
@@ -245,7 +245,7 @@
   },
   "searchErrors": {
     "domainMalformed": {
-      "long": "Hai aggiunto un dominio senza estensione TLD come .eth oppure hai aggiunto caratteri non supportati.",
+      "long": "Hai aggiunto un dominio senza estensione TLD come .plq oppure hai aggiunto caratteri non supportati.",
       "short": "Dominio non valido. {{searchTerm}} non è un nome di dominio valido."
     },
     "tooShort": {
@@ -304,7 +304,7 @@
         "title": "2. Imposta altri record"
       },
       "step3": {
-        "text": "Puoi ospitare i tuoi file statici html/css/images su IPFS e inserire l'hash sul Content record del dominio ENS. Dopo potrà essere risolto dai browser che supportano ENS (es. Opera), dalle estensioni browser (Metamask), o da qualsiasi browser con estensione '.link' alla fine (es. ens.eth.link).",
+        "text": "Puoi ospitare i tuoi file statici html/css/images su IPFS e inserire l'hash sul Content record del dominio ENS. Dopo potrà essere risolto dai browser che supportano ENS (es. Opera), dalle estensioni browser (Metamask), o da qualsiasi browser con estensione '.link' alla fine (es. ens.plq.link).",
         "title": "3. Imposta un content hash di un sito web decentralizzato"
       },
       "title": "Impara come gestire il tuo dominio."

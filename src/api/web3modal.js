@@ -62,13 +62,16 @@ export const connect = async () => {
 
     web3Modal = new Web3Modal(option)
     provider = await web3Modal.connect()
-    const customProvider = new ethers.providers.Web3Provider(
+    console.log(provider)
+    console.log(customNetwork)
+    /*const customProvider = new ethers.providers.Web3Provider(
       provider,
       customNetwork
-    )
+    )*/
 
     await setupENS({
-      customProvider,
+      customProvider: provider,
+      customNetwork: customNetwork,
       reloadOnAccountsChange: false,
       enforceReload: true,
       ensAddress

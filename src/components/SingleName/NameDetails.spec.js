@@ -24,14 +24,14 @@ import NameDetails from './NameDetails'
 const mocks = []
 
 describe('NameDetails', () => {
-  const pathnameroot = '/name/vitalik.eth'
+  const pathnameroot = '/name/vitalik.plq'
   afterEach(() => {
     useQuery.mockClear()
   })
   it('should redirect to /register if register tab is register', () => {
     const mockProps = {
       domain: {
-        name: 'vitalik.eth'
+        name: 'vitalik.plq'
       },
       pathname: pathnameroot,
       tab: 'register'
@@ -58,7 +58,7 @@ describe('NameDetails', () => {
   it('should redirect to /details if tab is not register', () => {
     const mockProps = {
       domain: {
-        name: 'vitalik.eth'
+        name: 'vitalik.plq'
       },
       pathname: pathnameroot + '/',
       tab: 'details'
@@ -87,7 +87,7 @@ describe('NameDetails', () => {
     it(`should not redirect to /${tab} if already in ${tab}`, () => {
       const mockProps = {
         domain: {
-          name: 'vitalik.eth'
+          name: 'vitalik.plq'
         },
         pathname: `${pathnameroot}/${tab}`,
         tab
@@ -115,7 +115,7 @@ describe('NameDetails', () => {
   it('should pass isMigrated loading state to DetailsContainer', () => {
     const mockProps = {
       domain: {
-        name: 'vitalik.eth',
+        name: 'vitalik.plq',
         parent: ''
       },
       pathname: '/name/leontalbert.eth/details',

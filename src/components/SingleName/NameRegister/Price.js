@@ -53,8 +53,8 @@ const Price = ({
   let withPremium, c
   if (!loading && price) {
     c = priceCalculator({
-      price, // in ETH, BN
-      premium: premiumOnlyPrice, // in ETH
+      price, // in PLQ, BN
+      premium: premiumOnlyPrice, // in PLQ
       ethUsdPrice
     })
     ethPrice = c.price
@@ -69,7 +69,7 @@ const Price = ({
   return (
     <PriceContainer>
       <Value>
-        {ethPrice} ETH
+        {ethPrice} PLQ
         {withPremium && (
           <USD>
             {withPremium}${priceInUsd}

@@ -43,8 +43,8 @@ export default function LineGraph({
   price
 }) {
   const c = priceCalculator({
-    price, // in ETH, BN
-    premium: premiumOnlyPrice, // in ETH
+    price, // in PLQ, BN
+    premium: premiumOnlyPrice, // in PLQ
     ethUsdPrice
   })
 
@@ -216,7 +216,7 @@ export default function LineGraph({
           {t('linegraph.title', {
             premiumInEth: c.premium
           })}{' '}
-          ETH($
+          PLQ($
           {c.premiumInUsd})
         </Title>
         <span>

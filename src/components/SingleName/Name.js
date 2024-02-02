@@ -37,12 +37,12 @@ const RightBar = styled('div')`
 const Favourite = styled(DefaultFavourite)``
 
 function isRegistrationOpen(available, parent) {
-  return parent === 'eth' && available
+  return parent === 'plq' && available
 }
 
 function isDNSRegistrationOpen(domain) {
   const nameArray = domain.name?.split('.')
-  if (nameArray?.length !== 2 || nameArray?.[1] === 'eth') {
+  if (nameArray?.length !== 2 || nameArray?.[1] === 'plq') {
     return false
   }
   return domain.isDNSRegistrar && domain.owner === EMPTY_ADDRESS
@@ -158,9 +158,7 @@ function Name({ details: domain, name, pathname, type, refetch }) {
       <NonMainPageBannerContainerWithMarginBottom>
         {showNameWrapperBanner ? (
           <NameWrapperBanner isWrapped={isNameWrapped} />
-        ) : (
-          <DAOBannerContent />
-        )}
+        ) : '' }
       </NonMainPageBannerContainerWithMarginBottom>
       <NameContainer state={containerState} key={key}>
         <TopBar percentDone={percentDone}>

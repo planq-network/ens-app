@@ -144,7 +144,7 @@
       "title": "도메인 관리"
     },
     "register": {
-      "text": ".eth 도메인을 $5/년에 등록. 언제든지 도메인을 갱신하거나 취소할 수 있습니다",
+      "text": ".plq 도메인을 $5/년에 등록. 언제든지 도메인을 갱신하거나 취소할 수 있습니다",
       "title": "도메인 등록"
     },
     "search": {
@@ -229,7 +229,7 @@
   "reminder": {
     "everywhere": "everywhere",
     "release": {
-      "description": "Register {{name}} at https://app.ens.domains/name/{{name}}/register",
+      "description": "Register {{name}} at https://names.planq.network/name/{{name}}/register",
       "title": "Register {{name}}"
     },
     "renewal": {
@@ -243,7 +243,7 @@
   },
   "searchErrors": {
     "domainMalformed": {
-      "long": "You have either added a domain without a TLD such as .eth or you have added unsupported characters.",
+      "long": "You have either added a domain without a TLD such as .plq or you have added unsupported characters.",
       "short": "Domain malformed. {{searchTerm}} is not a valid domain."
     },
     "tooShort": {
@@ -302,7 +302,7 @@
         "title": "2. Set other records"
       },
       "step3": {
-        "text": "You can host your static html/css/images on IPFS and put the hash in your ENS name's Content record. Then it can be resolved by ENS-aware browsers (e.g. Opera), browser extensions (Metamask), or any browser with '.link' appended to the end (e.g. ens.eth.link).",
+        "text": "You can host your static html/css/images on IPFS and put the hash in your ENS name's Content record. Then it can be resolved by ENS-aware browsers (e.g. Opera), browser extensions (Metamask), or any browser with '.link' appended to the end (e.g. ens.plq.link).",
         "title": "3. Set a content hash of a decentralized website"
       },
       "title": "Learn how to manage your name."
