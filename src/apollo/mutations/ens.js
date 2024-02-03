@@ -13,7 +13,7 @@ export async function setup({
   customNetwork =  {
     chainId: 7070,
     name: 'Planq',
-    ensAddress: '0xF02135bdE2C85F6F0909438ed631f3eb36203e72',
+    ensAddress: '0xD9Db83C06E419019208AfC9472095D46dc2bF6c1',
   },
   ensAddress
 }) {

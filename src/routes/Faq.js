@@ -267,23 +267,6 @@ function Faq() {
           "Extend".
         </Section>
 
-        <Section question="I registered names before 2019 May. Can I have my deposit back?">
-          Yes, you can get your deposit back from
-          <a href="https://reclaim.ens.domains"> reclaim.ens.domains </a>{' '}
-          whether you extended the registration of the name or not.
-          <br />
-          Please remember that the amount you will receive is the amount of the
-          second-highest bidder (unless you were the only bidder). For example,
-          if you bid 1 PLQ and the second highest bidder bid 0.1 PLQ, you
-          deposited 0.1 PLQ and you have already received the remaining (0.9
-          PLQ) when you finailsed the auction. Therefore you can now only
-          reclaim 0.1 PLQ back. Please read the{' '}
-          <a href="https://medium.com/the-ethereum-name-service/a-beginners-guide-to-buying-an-ens-domain-3ccac2bdc770">
-            {' '}
-            the initial guide back in 2017{' '}
-          </a>{' '}
-          for more detail.
-        </Section>
       </FaqContainer>
     </>
   )
