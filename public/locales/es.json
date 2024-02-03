@@ -1,6 +1,6 @@
 {
   "address": {
-    "etherscanButton": "Ver en Etherscan",
+    "etherscanButton": "Ver en EVM Explorer",
     "filter": {
       "controller": "Controlador",
       "registrant": "Registrante"

@@ -1,6 +1,6 @@
 {
   "address": {
-    "etherscanButton": "Xem chi tiết trên Etherscan",
+    "etherscanButton": "Xem chi tiết trên EVM Explorer",
     "filter": {
       "controller": "Địa chỉ quản lý",
       "registrant": "Địa chỉ đăng kí"
