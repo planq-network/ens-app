@@ -19,11 +19,11 @@ export async function setup({
 }) {
   let option = {
     reloadOnAccountsChange: false,
-    enforceReadOnly,
-    enforceReload,
-    customProvider,
-    customNetwork,
-    ensAddress
+    enforceReadonly: enforceReadOnly,
+    enforceReload: enforceReload,
+    customProvider: customProvider,
+    customerNetwork: customNetwork,
+    ensAddress: ensAddress
   }
   const {
     ens: ensInstance,

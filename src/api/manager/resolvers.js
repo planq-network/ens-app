@@ -87,7 +87,7 @@ export const handleSingleTransaction = async (
     let addressAsBytes
 
     // use 0x00... for ETH because an empty string throws
-    if (coinRecord.key === 'PLQ' && coinRecord.value === '') {
+    if (coinRecord.key === 'ETH' && coinRecord.value === '') {
       coinRecord.value = emptyAddress
     }
 
@@ -141,7 +141,7 @@ export const handleMultipleTransactions = async (
         const { decoder, coinType } = formatsByName[record.key]
         let addressAsBytes
         // use 0x00... for ETH because an empty string throws
-        if (record.key === 'PLQ' && record.value === '') {
+        if (record.key === 'ETH' && record.value === '') {
           record.value = emptyAddress
         }
         if (!record.value || record.value === '') {
