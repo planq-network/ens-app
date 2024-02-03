@@ -13,7 +13,7 @@ export async function setup({
   customNetwork =  {
     chainId: 7070,
     name: 'Planq',
-    ensAddress: '0xD9Db83C06E419019208AfC9472095D46dc2bF6c1',
+    ensAddress: '0x451098F7c22b7404450293D82853596052D79FaF',
   },
   ensAddress
 }) {
@@ -22,7 +22,7 @@ export async function setup({
     enforceReadonly: enforceReadOnly,
     enforceReload: enforceReload,
     customProvider: customProvider,
-    customerNetwork: customNetwork,
+    customNetwork: customNetwork,
     ensAddress: ensAddress
   }
   const {

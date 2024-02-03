@@ -62,8 +62,7 @@ export const connect = async () => {
 
     web3Modal = new Web3Modal(option)
     provider = await web3Modal.connect()
-    console.log(provider)
-    console.log(customNetwork)
+
     /*const customProvider = new ethers.providers.Web3Provider(
       provider,
       customNetwork
