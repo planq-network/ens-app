@@ -114,14 +114,6 @@ function Faq() {
           relatively expensive.
         </Section>
 
-        <Section question="Can I register names other than .plq?">
-          Yes, you can import into ENS any DNS name with the required DNSSEC.
-          <br />
-          Please refer to our{' '}
-          <a href="https://docs.ens.domains/dns-registrar-guide">guide</a> for
-          more detail.
-        </Section>
-
         <H2>When you register</H2>
 
         <Section question="At step 1, the transaction was slow so I speeded up">
